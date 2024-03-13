@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Home Page</title>
+</head>
+<body>
+<!-- Відображаємо рядок, переданий з контролера -->
+<h1 th:text="${message}"></h1>
+
+<!-- Відображаємо список, переданий з контролера -->
+<ul>
+    <li th:each="item : ${items}" th:text="${item}"></li>
+</ul>
+</body>
+</html>
